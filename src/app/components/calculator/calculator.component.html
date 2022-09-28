@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="items-top">
+    <button class="buttons reset" (click)="resetData()">
+      C
+    </button>
+    <div class="result">
+      {{ result }}
+    </div>
+  </div>
+  <div class="all-buttons">
+    <button class="buttons" *ngFor="let button of buttons" (click)="saveNumber(button)">
+      {{button}}
+    </button>
+  </div>
+</div>
